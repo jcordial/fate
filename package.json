@@ -1,0 +1,27 @@
+{
+  "name": "fate",
+  "version": "0.0.1",
+  "description": "Fate you date. Choose your destiny. Make dates what you need when you need.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcordial/fate.git"
+  },
+  "keywords": [
+    "javascript",
+    "date",
+    "mocking"
+  ],
+  "author": "Jason Cordial <jpcordial@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcordial/fate/issues"
+  },
+  "homepage": "https://github.com/jcordial/fate#readme",
+  "devDependencies": {
+    "@types/node": "^13.7.7"
+  }
+}
