@@ -1,11 +1,16 @@
-const OriginalDate = root.Date;
+const OriginalDate = global.Date;
 
-const fate = (forcedMoment) => {
-  root.Date =  function (...rest) {
+/**
+ * @param {Date} forcedMoment
+ */
+const fate = (forcedMoment = new Date()) => {
+  let constructed = false;
+  global.Date =  function (...rest) {
     if(constructed){
       return new OriginalDate(...rest);
     }
-    root.Date = OriginalDate;
+    global.Date = OriginalDate;
+    constructed = true;
     return forcedMoment;
   };
 };
